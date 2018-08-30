@@ -20,6 +20,43 @@ img#forca{
     top: 86px;
     padding: 0px;
 }
+img#cabeca{
+  width: 90px;
+  margin-left: 425px;
+  margin-top: 69px;
+  position: absolute;
+}
+img#corpo{
+  width: 90px;
+  margin-top: 119px;
+  position: absolute;
+  margin-left: 425px;
+}
+img#bracoE{
+  width: 90px;
+  position: absolute;
+  margin-left: 408px;
+  margin-top: 121px;
+}
+img#bracoD{
+  width: 90px;
+  position: absolute;
+  margin-left: 442px;
+  margin-top: 118px;
+
+}
+img#pernaE{
+  width: 90px;
+  position: absolute;
+  margin-left: 409px;
+  margin-top: 163px;
+}
+img#pernaD{
+  width: 90px;
+  position: absolute;
+  margin-left: 439px;
+  margin-top: 161px;
+}
 
 #titulo{
   font-family: cursive;
