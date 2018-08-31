@@ -4,9 +4,9 @@ var Posicao = Math.round(Math.random() * Qtd);
 var Palavra = listaTimes.length;
 var Tamanho = Palavra.length;
 var caixaLetras = [];
-var Acertos;
+var Acertos= 0;
 var errosMax = 7;
-var Erros;
+var Erros = 0;
 var Desenhos = [];
 var Acertou = false;
 var Jogando = false;
@@ -44,14 +44,16 @@ function jogar(){
                 Acertos++;
                 Busca = Palavra.match(Letra);
                 Acertou = true;
+                jog.value="";
             }
             if(!Acertou){
                 document.getElementById("letrasDigitadas").innerHTML += Letra.toUpperCase();
                 Erros++;
                 if(Erros<7){
                     Desenhos[Erros].style.display = "block";
+                    jog.value="";
                 }else{
-                    document.getElementById("cabeca").src = "";
+                    document.getElementById("cabeca").src = "img/cabeca2.png";
                     document.getElementById("msg").innerHTML = "Infelizmente você PERDEU!!";
                     Jogando = false;
                 }
@@ -79,13 +81,13 @@ function inicia(){
     Tamanho=Palavra.length;
     defineLetras(Tamanho);
     document.getElementById("msg").innerHTML = "";
-    Desenhos[1].document.getElementById("cabeca");
-     Desenhos[2].document.getElementById("corpo");
-     Desenhos[3].document.getElementById("bracoE");
-     Desenhos[4].document.getElementById("bracpD");
-     Desenhos[5].document.getElementById("pernaE");
-     Desenhos[6].document.getElementById("pernaD");
-    document.getElementById("cabeca").src="";
+    Desenhos[1]=document.getElementById("cabeca");
+     Desenhos[2]=document.getElementById("corpo");
+     Desenhos[3]=document.getElementById("bracoE");
+     Desenhos[4]=document.getElementById("bracoD");
+     Desenhos[5]=document.getElementById("pernaE");
+     Desenhos[6]=document.getElementById("pernaD");
+   
     for(var i = 1; i < 7; i++){
         Desenhos[i].style.display = "none";
     }
