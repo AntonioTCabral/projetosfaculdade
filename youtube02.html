@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YouTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo-youtube.css" />
+</head>
+
+<body class="container">
+    <table class="container">
+        <tr>
+            <h1 id="emoji">DESAFIO DO EMOJI DESENHO ANIMADO - QUEM SABE MAIS???</h1>
+        </tr>
+        <tr id="myVideo">
+            <video controls id="video">
+                <source src="video/Final Level 03.mp4" type="video/mp4"
+                    onended="myFunction()">
+            </video>
+        </tr>
+        <tr>
+            <div id="Text">
+                <h1 id="texto">Assista à outros videos relacionados.</h1>
+            </div>
+        </tr>
+        <tr>
+            <td id="btn01">
+                <button id="btn01" type="submit" onclick="location.href='youtube.html';">
+                    <img src="img/Final Level.png" />
+                </button>
+            </td>
+            <td id="btn02">
+                <button id="btn02" type="submit" onclick="location.href='youtube03.html';">
+                    <img src="img/Final Level 03.png" />
+                </button>
+            </td>
+        </tr>
+    </table>
+    <script src="script/youtube.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>WEB WORKER</title>
+    <link rel="stylesheet" href="css/worker.css">
+  </head>
+  <body>
+    <div class="card">
+        <div class="container">
+          <span id="pergunta01"><b>Informe o tamanho do Vetor:</b></span><input type="text" name="vetor" id="vetor">
+          <br>
+          <br>
+          <br>
+          <span id="pergunta02"><b>Escolha o método de ordenação:</b></span><button type="button" class="myButton" name="bolha" id="bolha" onclick="Bolha()">Método Bolha</button><button type="button" class="myButton02" name="nativo" id="nativo" onclick="Nativo()">Método Nativo</button>
+          <br>
+           <span id="resultado"></span><br>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script-worker.js"></script>
+    <script type="text/javascript" src="workers/worker.js"></script>
+    <script type="text/javascript" src="workers/worker02.js"></script>
+  </body>
+</html>

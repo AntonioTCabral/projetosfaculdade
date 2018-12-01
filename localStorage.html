@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="css/estilo-localstorage.css">
+</head>
+
+<body onload="mensagem()">
+    <div class="container">
+        <div id="campo-nome">Nome:
+            <input id="nome" type="text" name="title">
+            <button class="myButton2" type="button" id="btnSalvarNome" name="button">Salvar</button>
+            <button class="myButton3" type="button" id="limparCampos" name="button">Limpar Campos</button>
+        </div>
+    </div>
+    <span id="usuario"></span>
+    <br>
+    <span id="acesso">Ultimo acesso:</span>
+    <span id="dia"></span>
+    <div class="card">
+        <div class="container">
+            <h4><b>Caixa de Digitação:</b></h4>
+            <textarea name="digitacao" id="digitacao" rows="8" cols="80"></textarea>
+            <button class="myButton" type="button" id="btnSalvaTexto" name="button">Salvar</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/localStorage.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>
